@@ -1,10 +1,11 @@
 import os, re, time
 
+
 def cancel_shutdown():
-    print("Shutdwon is canceled")
+    print("Shutdown is canceled")
+    os.system("shutdown -a")
     time.sleep(5)
 
 
-
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
