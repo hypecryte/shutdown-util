@@ -1,5 +1,7 @@
 import os, re, time
 
+def get_current_os():
+    print("In progress!!!")
 
 def shutdown():
     time_text = input("Введите время для отключения(например, 1ч 20м 15с): ")
