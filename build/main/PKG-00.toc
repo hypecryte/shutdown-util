@@ -1,0 +1,56 @@
+('D:\\BACKUPS\\VAULT\\WORKSPACE '
+ 'LABS\\WORKSHOP\\IT\\HANDMADE\\PROGRAMMING\\PYTHON\\SIMPLE-PROJECTS\\shutdown-util\\build\\main\\main.pkg',
+ {'BINARY': True,
+  'DATA': True,
+  'EXECUTABLE': True,
+  'EXTENSION': True,
+  'PYMODULE': True,
+  'PYSOURCE': True,
+  'PYZ': False,
+  'SPLASH': True,
+  'SYMLINK': False},
+ [('pyi-contents-directory _internal', '', 'OPTION'),
+  ('PYZ-00.pyz',
+   'D:\\BACKUPS\\VAULT\\WORKSPACE '
+   'LABS\\WORKSHOP\\IT\\HANDMADE\\PROGRAMMING\\PYTHON\\SIMPLE-PROJECTS\\shutdown-util\\build\\main\\PYZ-00.pyz',
+   'PYZ'),
+  ('struct',
+   'D:\\BACKUPS\\VAULT\\WORKSPACE '
+   'LABS\\WORKSHOP\\IT\\HANDMADE\\PROGRAMMING\\PYTHON\\SIMPLE-PROJECTS\\shutdown-util\\build\\main\\localpycs\\struct.pyc',
+   'PYMODULE'),
+  ('pyimod01_archive',
+   'D:\\BACKUPS\\VAULT\\WORKSPACE '
+   'LABS\\WORKSHOP\\IT\\HANDMADE\\PROGRAMMING\\PYTHON\\SIMPLE-PROJECTS\\shutdown-util\\build\\main\\localpycs\\pyimod01_archive.pyc',
+   'PYMODULE'),
+  ('pyimod02_importers',
+   'D:\\BACKUPS\\VAULT\\WORKSPACE '
+   'LABS\\WORKSHOP\\IT\\HANDMADE\\PROGRAMMING\\PYTHON\\SIMPLE-PROJECTS\\shutdown-util\\build\\main\\localpycs\\pyimod02_importers.pyc',
+   'PYMODULE'),
+  ('pyimod03_ctypes',
+   'D:\\BACKUPS\\VAULT\\WORKSPACE '
+   'LABS\\WORKSHOP\\IT\\HANDMADE\\PROGRAMMING\\PYTHON\\SIMPLE-PROJECTS\\shutdown-util\\build\\main\\localpycs\\pyimod03_ctypes.pyc',
+   'PYMODULE'),
+  ('pyimod04_pywin32',
+   'D:\\BACKUPS\\VAULT\\WORKSPACE '
+   'LABS\\WORKSHOP\\IT\\HANDMADE\\PROGRAMMING\\PYTHON\\SIMPLE-PROJECTS\\shutdown-util\\build\\main\\localpycs\\pyimod04_pywin32.pyc',
+   'PYMODULE'),
+  ('pyiboot01_bootstrap',
+   'D:\\BACKUPS\\VAULT\\WORKSPACE '
+   'LABS\\WORKSHOP\\IT\\HANDMADE\\PROGRAMMING\\PYTHON\\SIMPLE-PROJECTS\\shutdown-util\\.env\\Lib\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
+   'PYSOURCE'),
+  ('pyi_rth_inspect',
+   'D:\\BACKUPS\\VAULT\\WORKSPACE '
+   'LABS\\WORKSHOP\\IT\\HANDMADE\\PROGRAMMING\\PYTHON\\SIMPLE-PROJECTS\\shutdown-util\\.env\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py',
+   'PYSOURCE'),
+  ('main',
+   'D:\\BACKUPS\\VAULT\\WORKSPACE '
+   'LABS\\WORKSHOP\\IT\\HANDMADE\\PROGRAMMING\\PYTHON\\SIMPLE-PROJECTS\\shutdown-util\\main.py',
+   'PYSOURCE')],
+ 'python314.dll',
+ True,
+ False,
+ False,
+ [],
+ None,
+ None,
+ None)
