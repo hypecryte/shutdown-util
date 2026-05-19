@@ -1,7 +1,14 @@
-import os, re, time
+import os, re, time, sys
+
+
+def get_current_os():
+    # Получаем текущую ОС
+    current_platform = sys.platform
+    return current_platform
 
 
 def shutdown():
+    current_platform = get_current_os()
     time_text = input("Введите время для отключения(например, 1ч 20м 15с): ")
 
     # Ищем совпадения
@@ -17,16 +24,23 @@ def shutdown():
     # Считаем общее время
     result_time = (hours * 3600) + (minutes * 60) + seconds
 
-    # Логика таймера и выключения
-    if result_time > 0:
-        print(f"Таймер запущен. Времени до отключения: {result_time}с")
-        time.sleep(5)
-        os.system(f"shutdown /s /t {result_time}")  # Команда для Windows
-    else:
-        print("Время не распознано или равно нулю.")
+    if current_platform == "win32":
+        # Логика таймера и выключения
+        if result_time > 0:
+            print(f"Таймер запущен. Времени до отключения: {result_time}с")
+            os.system(f"shutdown /s /t {result_time}")  # Команда для Windows
+            time.sleep(5)
+        else:
+            print("Время не распознано или равно нулю.")
+    elif current_platform == "linux" or current_platform == "darwin":
+        if result_time > 0:
+            print(f"Таймер запущен. Времени до отключения: {result_time}с")
+            os.system(f"shutdown -h +{result_time}")
+            time.sleep(5)
 
 
 def shutdown_restart():
+    current_platform = get_current_os()
     time_text = input("Введите время для перезагрузки(например, 1ч 20м 15с): ")
 
     # Ищем совпадения
@@ -42,13 +56,21 @@ def shutdown_restart():
     # Считаем общее время
     result_time = (hours * 3600) + (minutes * 60) + seconds
 
-    # Логика таймера и выключения
-    if result_time > 0:
-        print(f"Таймер запущен. Времени до перезагрузки: {result_time}с")
-        time.sleep(5)
-        os.system(f"shutdown /r /t {result_time}")  # Команда для Windows
-    else:
-        print("Время не распознано или равно нулю.")
+    if current_platform == "win32":
+        # Логика таймера и выключения
+        if result_time > 0:
+            print(f"Таймер запущен. Времени до перезагрузки: {result_time}с")
+            os.system(f"shutdown /r /t {result_time}")  # Команда для Windows
+            time.sleep(5)
+        else:
+            print("Время не распознано или равно нулю.")
+    elif current_platform == "linux" or current_platform == "darwin":
+        if result_time > 0:
+            print(f"Таймер запущен. Времени до перезагрузки: {result_time}с")
+            os.system(f"shutdown -r +{result_time}")
+            time.sleep(5)
+        else:
+            print("Время не распознано или равно нулю.")
 
 
 def cancel_shutdown():
